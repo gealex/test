@@ -670,6 +670,9 @@ class CommandManager
      */
     protected function makeCommand(array $command_def){
         $command_class = $command_def['class'];
+        if(!class_exists($command_def['class'])){
+            echo 'class prob'. $command_def['class'];
+        }
         if (!is_subclass_of($command_def['class'], \SitPHP\Commands\Command::class)) {
             echo 'subclass prob'. $command_def['class'];
             return null;
