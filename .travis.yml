@@ -1,22 +1,14 @@
 language: php
 
+env:
+  - PHP_UNIT="PHPUNIT_VERSION=7.*"
+
 matrix:
   include:
     - php: 7.1
-      env:
-        - PHPUNIT_VERSION=7.*
     - php: 7.2
-      env:
-        - PHPUNIT_VERSION=7.*
-    - php: 7.2
-      env:
-        - PHPUNIT_VERSION=8.*
     - php: 7.3
-      env:
-        - PHPUNIT_VERSION=7.*
-    - php: 7.3
-      env:
-        - PHPUNIT_VERSION=8.*
+    - php: hhvm
 
 install:
-  - composer require phpunit/phpunit:$PHPUNIT_VERSION;
+  - composer require phpunit/phpunit:PHP_UNIT;
