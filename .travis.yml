@@ -11,4 +11,4 @@ matrix:
     - php: hhvm
 
 install:
-  - composer require phpunit/phpunit:PHP_UNIT;
+  - composer require phpunit/phpunit:$PHP_UNIT;
