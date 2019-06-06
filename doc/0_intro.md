@@ -4,7 +4,7 @@
 
 The "sitphp/commands" library can help you to create commands super easily for your application or your library. You can also use it to build your own customized command tool.
 
-![command showcase](img/command_showcase.gif)
+![command showcase](/doc/img/command_showcase.gif)
 
 ## Requirements
 
